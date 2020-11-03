@@ -1,0 +1,112 @@
+@media screen and (max-width: 513px) {
+    .button {
+        padding: 10px;
+    }
+    .history {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+    /* Property pendukung */
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.button {
+    flex-basis: 25%;
+    /* properti pendukung */
+    font-size: 2em;
+    text-align: center;
+    padding: 40px;
+    background: -webkit-linear-gradient(top, #99d40f, #b1f512);
+    cursor: pointer;
+    transition: .1s;
+    color: white;
+    border-radius: 2px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}
+
+.double {
+    flex-basis: 50.1%;
+}
+
+.display {
+    color: white;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #333333;
+    font-size: 2em;
+    text-align: right;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+.spasi {
+    flex-basis: 24.6%;
+}
+
+.operator,
+.negative,
+.equals {
+    background: -webkit-linear-gradient(top, #e7d533, rgb(255, 252, 70));
+    color: rgb(87, 87, 87);
+    margin-right: 0;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.button:hover {
+    font-weight: bold;
+    transform: scale(1.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.history {
+    width: 80%;
+    margin: 30px auto 0 auto;
+    overflow: scroll;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    text-align: center;
+    padding: 16px;
+}
+
+th {
+    background: -webkit-linear-gradient(top, #99d40f, #b1f512);
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #d2d2d2;
+}
